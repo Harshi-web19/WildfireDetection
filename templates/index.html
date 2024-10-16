@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Website UI</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#live-usage">LIVE USAGE</a>
+            <a href="#research-paper">RESEARCH PAPER</a>
+            <a href="#team-members">TEAM MEMBERS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+        <section id="home">
+            <h1>REAL-TIME WILDFIRE DETECTION </h1>
+            <h1>TO PROTECT LIVES AND NATURE</h1>
+        </section>
+    </header>
+
+    <div class="container">
+        <div class="left-section">
+            <img src="../static/fire image.jpg" alt="Forest Fire Image">
+        </div>
+        <div class="right-section">
+            <h1>Introduction and Mission</h1>
+            <p>This project presents a wildfire detection system using the YOLO v10 model, an advanced object detection algorithm. Trained on wildfire datasets, the model analyzes real-time video feeds from surveillance cameras in high-risk areas, accurately identifying smoke and flames. This system improves detection speed and reduces false positives, offering a more reliable and timely tool for wildfire management compared to traditional methods like satellite imagery or human monitoring.</p>
+
+        </div>
+    </div>
+
+    <section id="live-usage">
+
+        <h2>Demonstration of Model</h2>
+        <div class="usage">
+            <div class="video">
+                <video controls>
+                    <source src="../static/original video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Original video</p>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="../static/original video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>After detection</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="camera-section">
+        <h1>Test our Model</h1>
+        <h2>Live Camera Feed</h2>
+        <img id="cameraFeed" src="/video_feed" width="640" height="480" alt="Live Camera Feed">
+        <div id="alert-message" style="display:none;">
+            <h2 style="color:red;"></h2>
+        </div>
+    </section>
+
+    <section id="team-members">
+        <h2>Meet Our Research Team</h2>
+        <div class="team-member">
+            <p><strong>Nikhil Babar</strong></p>
+            <p>Department of Computer Engineering.</p>
+        </div>
+        <div class="team-member">
+            <p><strong>Neha Bhosale</strong></p>
+            <p>Department of Computer Engineering.</p>
+        </div>
+        <div class="team-member">
+            <p><strong>Harshada Ghare</strong></p>
+            <p>Department of Computer Engineering.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>CONTACT US AT </p>
+        <a href="nikkbabargccp@gmail.com">nikkbabargccp@gmail.com</a>
+        <a href="bhosaleneha443@gmail.com">bhosaleneha443@gmail.com</a>
+        <a href="ghareharshada366@gmail.com">ghareharshada366@gmail.com</a>
+
+    </footer>
+    <script src="../static/script.js"></script>
+
+</body>
+
+</html>

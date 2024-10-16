@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation Bar Styles */
+header {
+    background: url('./background1.jpeg.jpg') no-repeat center center/cover;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 50rem;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px; 
+    text-align: center;
+    min-height: 100vh; 
+    margin-bottom: 50px; /* Spacing between sections */
+}
+
+/* Home Section */
+#home {
+    background: url('home-bg.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    flex-direction: column;
+    margin-bottom: 100px; /* Creates space between #home and the next section */
+}
+
+
+h1, h2 {
+    font-size: 4em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#home h1 {
+    margin-bottom: 50px; /* Slightly reduce gap between the two <h1> elements */
+}
+
+
+
+p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+/* Container for image and description */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 45rem;
+    background: url('./Demo model.png') no-repeat center center/cover;
+    background-size: cover;
+    margin-bottom: 50px; /* Creates space between this and the next section */
+    padding-top: 100px; /* Space between sections */
+    padding-bottom: 100px; /* Add more space at the bottom */
+    margin-top: 50px; /* Additional space at the top for separation */
+}
+
+.left-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left-section img {
+    width: 80%;
+    border: 5px solid white;
+}
+
+.right-section {
+    width: 50%;
+    color: white;
+    padding: 40px;
+}
+
+.right-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.right-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Live Usage Section */
+#live-usage {
+    padding: 80px 20px;
+    background: url('./Demo model.png') no-repeat center center/cover;
+    background-size: cover;
+    margin-bottom: 50px; 
+}
+
+#live-usage h2 {
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.usage {
+    display: flex;
+    justify-content: space-around; /* Ensure both videos are visible */
+    align-items: center;
+}
+
+.usage p {
+    color: #f0f0f0;
+}
+
+.video {
+    max-width: 45%; /* Ensure both videos fit side by side */
+    margin: 0 10px;
+    border: 5px solid white; /* Add white border around the video container */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+video {
+    width: 100%; /* Stretch videos to fit the container */
+    margin: 20px 0;
+    display: block; /* Ensures there's no gap under the video */
+}
+
+
+h1 {
+    margin: 0;
+}
+
+/* Camera Section */
+#camera-section {
+    background: url('./Test.jpeg.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 50rem; /* Increased height for more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#camera-section h1, #camera-section h2 {
+    color: #f0f0f0;
+    margin-bottom: 20px; /* Add space below the headers */
+}
+
+/* Live Camera Feed Styling */
+#live-camera-feed {
+    width: 70%; /* Adjust the width as needed */
+    max-height: 60vh; /* Restrict the height to avoid overflow */
+    border: 5px solid white; /* White border around the camera feed */
+    margin-top: 10px;
+}
+
+/* Alert Message Styling */
+#alert-message {
+    font-size: 28px; /* Increased size of the alert message */
+    font-weight: bold;
+    color: #ff0000; /* Red for visibility */
+    margin: 20px 0; /* Space between alert message and camera feed */
+    text-align: center;
+    padding: 15px; /* Padding inside the alert box */
+    border: 2px solid white; /* White border around alert message */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better visibility */
+    border-radius: 10px; /* Rounded corners for the alert box */
+}
+
+
+/* Camera Feed Styling */
+#live-camera-feed {
+    width: 70%; /* Adjust the width as needed */
+    max-height: 60vh; /* Restrict the height to avoid overflow */
+    border: 5px solid white;
+    margin-top: 10px;
+}
+
+
+/* Team Members Section */
+#team-members {
+    background: url('./contact.png') no-repeat center center/cover;
+    background-size: cover;
+    padding: 100px 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 28%;
+    margin: 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+#team-members h2{
+    color: white;
+}
+
+.team-member p {
+    font-size: 1em;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    margin-left: 10rem;
+}
+
+footer p {
+    margin-left: 25rem;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust base font size */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    .container {
+        flex-direction: column; /* Stack images and text */
+        height: auto; /* Allow auto height */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Full width on small screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    #live-camera-feed {
+        width: 100%; /* Full width for the camera feed */
+    }
+
+    .video {
+        max-width: 90%; /* Use more width on smaller screens */
+        margin: 10px auto; /* Center videos */
+    }
+
+    h1, h2 {
+        font-size: 2em; /* Reduce font size for smaller screens */
+        margin-bottom: 20px; /* Reduce spacing */
+    }
+
+    #alert-message {
+        font-size: 20px; /* Adjust alert message size */
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+
+    nav a {
+        display: block; /* Make links block elements */
+        padding: 10px; /* Add padding to links */
+        color: white; /* Text color for visibility */
+        text-align: center; /* Center align text */
+    }
+
+    #camera-section {
+        height: auto; /* Allow height to adjust automatically */
+        padding: 10px; /* Reduce padding */
+    }
+
+    #live-camera-feed {
+        width: 100%; /* Ensure it takes the full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #alert-message {
+        font-size: 20px; /* Adjust font size for better visibility on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em; /* Further reduce heading size */
+    }
+
+    p {
+        font-size: 1em; /* Adjust paragraph font size */
+    }
+
+    .team-member {
+        width: 100%; /* Stack team member cards on small screens */
+        margin: 20px 0; /* Adjust margin */
+    }
+
+    footer a {
+        display: block; /* Stack footer links */
+        margin: 10px 0; /* Adjust margin */
+    }
+}
